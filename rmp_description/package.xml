@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+  <name>rmp_description</name>
+  <version>0.0.1</version>
+  <description>
+    The rmp_description package provides Unified Robot Description Format files to represent a Segway Robotics Mobility Platform.
+  </description>
+  <maintainer email="thomas.decandia@sri.com">Thomas de Candia</maintainer>
+  <license>Private</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>urdf</build_depend>
+  <build_depend>xacro</build_depend>
+  <run_depend>urdf</run_depend>
+  <run_depend>xacro</run_depend>
+
+  <export>
+  </export>
+</package>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">
+
+   <property name="wheel_mass" value="4.0" />
+
+  <xacro:macro name="rmp440le_wheel" params="name parent orientation *origin">
+
+     <joint name="${name}_wheel" type="continuous">
+      <insert_block name="origin" />
+      <parent link="${parent}"/>
+      <child link="${name}_wheel_link" />
+      <axis xyz="0 1 0" />
+      <limit effort="6.5" velocity="10"/> 
+      <safety_controller k_velocity="10" />
+      <dynamics damping="1.0" friction="0.0" />
+    </joint>
+
+    <link name="${name}_wheel_link">
+      <inertial>
+        <mass value="${wheel_mass}" />
+        <origin xyz="0 0 0" />
+        <inertia ixx="0.08" ixy="0" ixz="0"
+                 iyy="0.14" iyz="0" izz="0.08" />
+      </inertial>
+
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 ${orientation}" />
+        <geometry>
+          <mesh filename="package://rmp_description/meshes/rmp440le/base/wheel.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+        
+        <material name="Black" />
+      </visual>
+
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 ${orientation}" />
+        <geometry>
+          <mesh filename="package://rmp_description/meshes/rmp440le/base/wheel_collision.stl" scale="0.001 0.001 0.001"/>
+        </geometry>
+      </collision>
+    </link>
+
+  </xacro:macro>
+
+</robot>

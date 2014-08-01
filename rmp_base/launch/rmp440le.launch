@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="rmp_base" type="rmp_440le_node" name="base" output="screen" launch-prefix="" >
+    <!-- udp, usb -->
+    <param name="transport_type" value="udp" />
+    <!-- will only be effective if transport_type is set to usb-->
+    <param name="device_port" value="/dev/ttyACM0" />
+  </node>
+
+</launch>

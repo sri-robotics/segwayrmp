@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       name="rmp440le" >
+
+  <xacro:include filename="$(find rmp_description)/urdf/common.xacro" />
+  <xacro:include filename="$(find rmp_description)/urdf/materials.urdf.xacro" />
+  <xacro:include filename="$(find rmp_description)/urdf/rmp440le/base.urdf.xacro" />
+  <xacro:include filename="$(find rmp_description)/urdf/rmp440le/wheel.urdf.xacro" />
+
+  <xacro:rmp440le_base name="base" />
+
+</robot>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find rmp_description)/launch/rmp440le_description.launch"/>
+  
+  <arg name="debug_urdf" value="$(optenv DEBUG_URDF false)" />
+  <group ns="rmp440le" if="$(arg debug_urdf)">
+    <arg name="gui" default="True" />
+    <param name="use_gui" value="$(arg gui)"/>
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+  </group>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find rmp_description)/launch/rmp440le.rviz" />
+</launch>

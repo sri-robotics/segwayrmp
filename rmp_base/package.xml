@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package>
+  <name>rmp_base</name>
+  <version>0.0.1</version>
+  <description>
+    The rmp_base package provides a ros interface to control a Segway Robotics Mobility Platform. 
+    In addition, navigation and status data are also published such as odometry, imu, mottor and battery status, ... 
+  </description>
+  <maintainer email="thomas.decandia@sri.com">Thomas de Candia</maintainer>
+  <license>Private</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>nav_msgs</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>rmp_msgs</build_depend>
+  <build_depend>tf</build_depend>
+  <run_depend>geometry_msgs</run_depend>
+  <run_depend>nav_msgs</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>rmp_msgs</run_depend>
+  <run_depend>tf</run_depend>
+
+  <export>
+  </export>
+</package>

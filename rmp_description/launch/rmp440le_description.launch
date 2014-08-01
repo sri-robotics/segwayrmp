@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <group ns="rmp440le">
+    <param name="tf_prefix" value="rmp440le" />
+    <param name="robot_description" command="$(find xacro)/xacro.py $(find rmp_description)/robots/rmp440le.urdf.xacro" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+  </group>
+</launch>
