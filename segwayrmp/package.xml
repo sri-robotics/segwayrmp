@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <name>segwayrmp</name>
+  <version>0.0.1</version>
+  <description>segwayrmp</description>
+  <maintainer email="thomas.decandia@sri.com">Thomas de Candia</maintainer>
+  <license>Private</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <run_depend>rmp_base</run_depend>
+  <run_depend>rmp_msgs</run_depend>
+  <run_depend>rmp_teleop</run_depend>
+  <run_depend>rmp_description</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>
