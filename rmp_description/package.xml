@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rmp_description</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>
     The rmp_description package provides Unified Robot Description Format files to represent a Segway Robotics Mobility Platform.
   </description>

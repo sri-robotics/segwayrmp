@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rmp_base</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>
     The rmp_base package provides a ros interface to control a Segway Robotics Mobility Platform. 
     In addition, navigation and status data are also published such as odometry, imu, mottor and battery status, ... 

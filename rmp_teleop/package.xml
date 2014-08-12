@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>rmp_teleop</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <description>
     The rmp_teleop package provides teleoperation functionalities for a Segway Robotics Mobility Platform.
     This package currently supports the xbox wireless joytsick.
