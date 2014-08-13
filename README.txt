@@ -1,4 +1,4 @@
-segwayrmp version 0.0.1 04/15/2014
+segwayrmp version 0.0.2 08/12/2014
 
 Description:
 segwayrmp provides a ROS interface to Segway Robotics Mobility Platforms. 

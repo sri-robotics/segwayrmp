@@ -10,11 +10,12 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   sensor_msgs
   std_msgs
+  diagnostic_updater
 )
 
 catkin_package(
   INCLUDE_DIRS include
-  CATKIN_DEPENDS rmp_msgs geometry_msgs roscpp sensor_msgs std_msgs
+  CATKIN_DEPENDS rmp_msgs geometry_msgs roscpp sensor_msgs std_msgs diagnostic_updater
 )
 
 # Look for <linux/joystick.h>
